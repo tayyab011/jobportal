@@ -44,7 +44,7 @@ app.get("*", (_, res) => {
 
 
 
-Database ="mongodb+srv://tayyabmd00001:tayyap011@cluster0.m1b9a.mongodb.net/Jobportal?retryWrites=true&w=majority&appName=Cluster0";
+const Database ="mongodb+srv://tayyabmd00001:tayyap011@cluster0.m1b9a.mongodb.net/Jobportal?retryWrites=true&w=majority&appName=Cluster0";
 
 
 mongoose
