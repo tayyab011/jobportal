@@ -44,11 +44,11 @@ app.get("*", (_, res) => {
 
 
 
-
+Database ="mongodb+srv://tayyabmd00001:tayyap011@cluster0.m1b9a.mongodb.net/Jobportal?retryWrites=true&w=majority&appName=Cluster0";
 
 
 mongoose
-  .connect(process.env.Database, { autoIndex: true })
+  .connect(Database, { autoIndex: true })
   .then(() => {
     console.log("Connected to MongoDB");
   })
