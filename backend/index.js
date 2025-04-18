@@ -21,7 +21,7 @@ app.use(cookieparser());
 export const JWT_KEY = "5EC7CEFA1BE7C9354A639369A2AA8";
 export const JWT_EXPIRATION_TIME = "30d";
 const corsOption = {
-  origin: "http://localhost:5173", // ✅ Change to Vite's default port
+  origin: "https://jobportal-t3df.onrender.com", // ✅ Change to Vite's default port
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,

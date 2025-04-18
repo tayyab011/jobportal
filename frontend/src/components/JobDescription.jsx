@@ -7,7 +7,7 @@ import { setSingleJob } from '../redux/jobSlice';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 
-const base_url = "http://localhost:8000/api";
+const base_url = "https://jobportal-t3df.onrender.com/api";
 
 const JobDescription = () => {
   const { singleJob } = useSelector((store) => store.job);

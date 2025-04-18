@@ -11,7 +11,10 @@ const ApplicantTable = () => {
 const statusHandler =async(status,id)=>{
 try {
   const result = await axios.post(
-    `http://localhost:8000/api/status/${id}/UpdateStatus`,{status},{withCredentials:true});
+    `https://jobportal-t3df.onrender.com/api/status/${id}/UpdateStatus`,
+    { status },
+    { withCredentials: true }
+  );
   if (result.data.success) {
      successtoast(result.data.message)
   }

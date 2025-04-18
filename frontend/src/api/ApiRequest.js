@@ -1,7 +1,7 @@
 import axios from "axios";
 import { errortoast, successtoast } from "../helper/helper";
 
-const base_url = "http://localhost:8000/api";
+const base_url = "https://jobportal-t3df.onrender.com/api";
 
 export const userRegister = async (formData) => {
   try {

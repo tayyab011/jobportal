@@ -3,7 +3,7 @@ import  axios  from 'axios';
 import { successtoast } from '../helper/helper';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAllJobs } from '../redux/jobSlice';
-const base_url = "http://localhost:8000/api";
+const base_url = "https://jobportal-t3df.onrender.com/api";
 const useGetAllJobs = () => {
 
 const dispatch =useDispatch()

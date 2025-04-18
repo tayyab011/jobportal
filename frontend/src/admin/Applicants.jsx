@@ -12,9 +12,12 @@ const Applicants = () => {
     const {id}=useParams()
 useEffect(()=>{
 ( async()=>{
-  const result= await axios.get(`http://localhost:8000/api/${id}/getApplicents`, {
-     withCredentials: true,
-   });
+  const result = await axios.get(
+    `https://jobportal-t3df.onrender.com/api/${id}/getApplicents`,
+    {
+      withCredentials: true,
+    }
+  );
 
     dispatch(setAllApplicants(result.data.job))
 

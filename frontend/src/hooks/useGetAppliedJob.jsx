@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 
 import { setSingleCompany } from "../redux/companySlice";
 import { setAllAppliedJobs } from "../redux/jobSlice";
-const base_url = "http://localhost:8000/api";
+const base_url = "https://jobportal-t3df.onrender.com/api";
 
 const useGetAppliedJob = () => {
   const dispatch = useDispatch();
