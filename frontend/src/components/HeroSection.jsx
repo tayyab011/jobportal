@@ -22,15 +22,12 @@ const searchJobHandler =()=>{
 
 
     return (
-      <div className="container mx-auto px-5 overflow-x-hidden py-12 min-h-screen ">
+      <div className="container mx-auto px-5 overflow-x-hidden py-12 ">
         <div className="badge badge-primary mt-4  flex justify-center">
-          <span >Number One Job Hunting Website</span>
+          <span>Number One Job Hunting Website</span>
         </div>
         <div className="hero-content flex-col lg:flex-row-reverse mb-20">
-          <img
-            src={p1}
-            className="max-w-sm rounded-lg shadow-xl mb-5 "
-          />
+          <img src={p1} className="max-w-sm rounded-lg shadow-xl mb-5 " />
           <div>
             <h1 className="text-5xl font-bold">
               Search Apply &<br /> <span>Get Your</span> <span>Dream Job</span>
@@ -45,9 +42,14 @@ const searchJobHandler =()=>{
                 type="text"
                 placeholder="Find Your Jobs"
                 className="input"
-                onChange={(e)=>setQuery(e.target.value)}
+                onChange={(e) => setQuery(e.target.value)}
               />
-              <button onClick={searchJobHandler} className="btn btn-primary mx-4">Get Started</button>
+              <button
+                onClick={searchJobHandler}
+                className="btn btn-primary mx-4"
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>

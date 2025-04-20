@@ -40,7 +40,7 @@ const CategoryCarousel = () => {
     navigate("/browser");
   };
   return (
-    <div className="relative w-full  my-20 px-5 pb-24  overflow-x-scroll   max-w-[1200vw]">
+    <div className="relative w-full   px-5 pb-24  overflow-x-scroll   max-w-[1200vw]">
       {/* Swiper Component */}
       <Swiper
         slidesPerView={3}
@@ -57,7 +57,7 @@ const CategoryCarousel = () => {
           <SwiperSlide
             key={i}
             onClick={() => searchJobHandler(show)}
-            className="bg-amber-500 hover:bg-amber-700 text-white px-4 py-2 cursor-pointer text-center rounded-lg"
+            className="bg-amber-500 hover:bg-amber-700 text-white  py-3 cursor-pointer text-center rounded-lg"
           >
             {show}
           </SwiperSlide>

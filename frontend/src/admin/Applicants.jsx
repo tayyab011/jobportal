@@ -27,11 +27,13 @@ useEffect(()=>{
 
     return (
       <Layout>
-        <div className="container mx-auto px-5 py-16">
-          <h1 className="text-center text-xl font-bold hanken   my-6">
-            Application({applicants?.applications?.length || 0})
+        <div className="container mx-auto px-4">
+          <h1 className="text-center text-xl font-bold hanken my-6">
+            Applications ({applicants?.applications?.length || 0})
           </h1>
-          <ApplicantTable />
+          <div className="overflow-x-auto">
+            <ApplicantTable />
+          </div>
         </div>
       </Layout>
     );

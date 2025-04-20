@@ -185,9 +185,10 @@ export const getApplicents =async(req,res) => {
      });
    }
    
-   await applicationModel.updateOne({ _id: applicationId }, { $set: reqbody });
+  const status = await applicationModel.updateOne({ _id: applicationId }, { $set: reqbody });
   
    return res.status(200).json({
+    status,
      message: "Status Updated Successfully",
      success: true,
    });
