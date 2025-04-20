@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="sticky top-0 z-50 navbar bg-base-100 shadow-md flex-none items-center justify-center ">
       <div className="flex-1">
         <a href="/" className="md:text-2xl font-extrabold  hanken text-xl  bg-clip-text text-transparent bg-gradient-to-r from-gray-500 via-stone-400 to-stone-600">
-          Job.s <span className="font-bold">io</span>
+          Job. <span className="font-bold">io</span>
         </a>
       </div>
 
